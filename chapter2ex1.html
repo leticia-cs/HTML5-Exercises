@@ -1,0 +1,44 @@
+<!--chapter2.html
+
+[PT] Exercício 1: CEP
+    - Pedir CEP
+    - Botão tipo "submit", rótulo "Enviar"
+    - Campo CEP deve ter preenchimento obrigatório
+        - Permitir apenas CEPs no modelo XXXXX-XXX
+    -Cada campo deve estar em um parágrafo diferente.
+
+[EN] NOTES:
+    - Found out that neither maxlength or max works for limiting character number. Uncool.
+    - I don't get the pattern="" thing. It is still confusing and the book does not explain it.
+    - The oninput="" part was entirely from StackOverflow. Credits to user Neha Jain! Saved me.
+    - Maybe if I knew pattern="" I would be able to complete this without SO. Time to study! 
+-->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form>
+            <p>
+                <label>
+                    CEP: <input
+                    type="number"
+                    placeholder="XXXXX-XXX"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="9"
+                    title="8 números. Incluir hifen."
+                    required />
+                </label>
+            </p>
+            <p>
+                <button type="submit">
+                    Enviar
+                </button>
+            </p>
+        </form>
+    </body>
+</html>
+
