@@ -10,7 +10,7 @@ This repository is a collection of my solutions of practical HTML5 exercises ext
 Each branch corresponds to the collection of exercises at the end of every chapter. Since Chapter 1 is all text and no code, its exercises are not included.
 
 ### Languages
-  - Web combo: HTML%, CSS3 and JavaScript. <br> <br>
+  - Web combo: HTML5, CSS3 and JavaScript. <br> <br>
   <a href="HTML"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
   <a href="CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"></a>
   <a href="JavaScript"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"></a> <br> <br>
