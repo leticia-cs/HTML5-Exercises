@@ -1,0 +1,63 @@
+<!--chapter2ex2.html
+
+[PT] Exercício 2: Validação.
+    - Pedir Nome, pedir Email.
+        - Linhas diferentes
+    - Dois botões do tipo "submit":
+        - "Enviar sem validar"
+        - "Validar e enviar"
+    - Campos são preenchimento obrigatório
+        - Exceção: botão "Enviar sem validar"
+
+[EN] Notes:
+    - Everything's working. Nice.
+    - This was very quick and nice to make.
+    - I was lucky to have clear examples, otherwise it would be terrible.
+    - I do not know how to Javascript but I understood the code.
+    - I shall study Javascript so I can make interesting functions.
+    -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+        <script type="text/javascript">
+            function validar() {
+                var n = document.formulario.pnome.value;
+                var e = document.formulario.pemail.value;
+                if(n=="") {
+                    alert("Preencha o campo Nome");
+                    documnet.formulario.pnome.value.focus();
+                }
+                if (e=="") {
+                    alert("Insira um endereço de e-mail válido.");
+                    document.formulario.pemail.value.focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+                <label>
+                    Nome:
+                    <input 
+                    type="text"
+                    name="pnome"
+                    placeholder="Seu nome">
+                </label> <br>
+                <label>
+                    E-mail:
+                    <input
+                    type="email"
+                    name="pemail"
+                    placeholder="seu@email.com">
+                </label> 
+            </p> <br>
+            <p>
+                <input type="submit" value="Enviar sem validar">
+                <input type="submit" value="Validar e enviar" onclick="validar();">
+            </p>
+        </form>
+</html>
