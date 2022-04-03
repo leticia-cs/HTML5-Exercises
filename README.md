@@ -7,7 +7,7 @@ Exercises from book "HTML5 - Guia Prático" by TERUEL, Evandro C. <br> <br>
 This repository is a collection of my solutions of practical HTML5 exercises extracted directly from the book "HTML5 - Guia Prático" by Evandro Carlos Teruel.
 
 ### How is this formatted?
-Each branch corresponds to the collection of exercises at the end of every chapter. Since Chapter 1 is all text and no code, its exercises are not included.
+Each folder corresponds to the collection of exercises at the end of a chapter. Since Chapter 1 is all text and no code, its exercises are not included.
 
 ### Languages
   - Web combo: HTML5, CSS3 and JavaScript. <br> <br>
