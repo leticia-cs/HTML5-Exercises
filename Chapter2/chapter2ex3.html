@@ -1,0 +1,49 @@
+<!--chapter2ex3
+[PT] Exercício 3: Opções
+    - Selecionar área do conhecimento
+        - Humanas
+        - Exatas
+        - Biológicas
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+        <script type="text/javascript">
+            function validar() {
+                var n = document.formulario.pnome.value;
+                var e = document.formulario.pemail.value;
+                if(n=="") {
+                    alert("Preencha o campo Nome");
+                    documnet.formulario.pnome.value.focus();
+                }
+                if (e=="") {
+                    alert("Insira um endereço de e-mail válido.");
+                    document.formulario.pemail.value.focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+                <label>
+                    Área:
+                    <input type="text" list="areas" name="campo">
+                </label>
+            </p>
+            <datalist id="areas">
+                <option value="Humanas"></option>
+                <option value="Exatas"></option>
+                <option value="Biológicas"></option>
+            </datalist>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>
+                    
+    
