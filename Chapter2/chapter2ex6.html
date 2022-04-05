@@ -1,0 +1,70 @@
+<!-- chapter2ex6.html
+[PT] Agendamento consulta
+    - Campo "Nome do médico"
+        - Input tipo "txt"
+    - Campo "Data de escolha"
+        - Data (dd/mm/aaaa)
+        - Escolha + Digitar
+    - Campo "Horário da consulta"
+        - Hora (hh:mm)
+        - Escolha + Digitar
+    - Botão "Enviar"
+    - Restrições:
+        - Data: Apenas entre 01/01/2010 e 20/01/2014
+        - Horário: Apenas das 08 às 17h
+
+[PT] Notas:
+    - Boa parte eu já tinha feito antes, em outros exercícios. Foi tranquilo.
+    - Tive dificuldades na hora de determinar as restrições.
+        - Encontrei os termos, na teoria funcionam.
+        - Na prática, não encaixa muito bem. Talvez seja o meu navegador.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+                <label>
+                    Nome do médico: <input
+                    type="text"
+                    name="nome"
+                    placeholder="Nome aqui"
+                    autocomplete="on"
+                    required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Data de escolha: <input
+                    type="date"
+                    name="Date"
+                    min="01-01-2010"
+                    max="20-01-2014"
+                    step="108000"
+                    required> 
+                </label>
+            </p>
+            <p>
+                <label>
+                    Horário da consulta: <input 
+                    type="time"
+                    min="08:00"
+                    max="17:00"
+                    name="hora"
+                    step="30"
+                    required>
+                </label>
+            </p>
+            <p>
+                <button type="submit">
+                    Enviar
+                </button>
+            </p>
+        </form>
+    </body>
+</html>
