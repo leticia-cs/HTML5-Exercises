@@ -1,0 +1,67 @@
+<!-- chapter2ex5
+[PT] Seleção
+    - Campo Nome
+    - Campo "Sexo"
+        - 2 opções (Masc., Feminino)
+        - Selecionar ou uma ou outra
+        - Dentro de um contêiner (Typeform)
+    - Campo "Áreas de atuação"
+        - 3 opções (Administrativa, Pedagógica, Comercial)
+        - Múltiplas seleções (Checkbox)
+        - Opção "Comercial" pré-selecionada
+        - Dentro de um contêiner (Typeform)
+    - Botão "Enviar"
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+                <label>
+                    Nome:
+                    <input
+                    type="text">
+                </label>
+            </p>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <p>
+                    <label>
+                        <input type="radio" name="sexo" value="Feminino"> Feminino
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="sexo" value="Masculino"> Masculino
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Áreas de atuação</legend>
+                <p>
+                    <label>
+                        <input type="checkbox" name="adm" value="Administrativa"> Administrativa
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="pedag" value="Pedagógica"> Pedagógica
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="comerc" value="Comercial" checked="checked"> Comercial
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">
+                    Enviar
+                </button>
+            </p>
+            
