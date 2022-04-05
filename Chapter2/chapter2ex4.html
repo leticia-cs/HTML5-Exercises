@@ -1,0 +1,49 @@
+<!-- chapter2ex4
+
+[PT] Exercício 4: Seleção Fotos
+    - Campo nome
+        - Tipos texto
+        - Nome "nome"
+        - Tamanho visível 30
+        - Até 30 caracteres
+    - Seleção de uma ou mais fotos (campo enviar)
+        - Uma ou mais imagens
+        - Apenas tipo GIF
+        - Nome "img"
+    - Botão com imagem
+        - Imagem 70 pixels de largura
+        - Caso imagem não apareça, aparece "Enviar"
+    - Cada campo em uma linha diferente.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+                <label>
+                    Nome:
+                    <input
+                    name="nome"
+                    size="30"
+                    maxlength="30">
+                </label>
+            </p> <br>
+            <p>
+                <input
+                type="file"
+                name="img"
+                accept="image/gif"
+                multiple="multiple">
+            </p>
+            <p>
+                <button type="button">
+                    <img src="venti.jpg" alt="Enviar" width="70">
+                </button>
+            </p>
+    </body>
+</html>
