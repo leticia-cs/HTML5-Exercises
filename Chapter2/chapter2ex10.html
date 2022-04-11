@@ -16,24 +16,27 @@
     <body>
       <script type="text/javascript">
         function autofill() {
-          document.getElementById("nome").value = "Ana Luiza";
-          document.getElementById("cidade").value = "São Paulo";
-          }
+            var txt1 = "Ana Luiza"
+            var txt2 = "São Paulo"
+            document.getElementById("nome").value = txt1;
+            document.getElementById("cidade").value = txt2;
+        }
       </script>    
         <form name="formulario" action="teste.asp" method="post">
             <p>
               <label>
                 Nome: <input
                 type="text"
-                name="nome"
+                id="nome"
                 placeholder="Seu nome"
-                required>
+                required
+                autofocus>
             </p>
             <p>
               <label>
                 Cidade: <input
                   type="text"
-                  name="cidade"
+                  id="cidade"
                   placeholder="Sua cidade"
                   required>
             </p>
