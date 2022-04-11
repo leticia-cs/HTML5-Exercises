@@ -1,0 +1,46 @@
+<!-- chapter2ex10
+- Campo "Nome:"
+- Campo "Cidade:"
+- Botão "Preencher campos"
+  - Duplo-clique:
+    - Input de "Nome:" deve ser preenchido com "Ana Luiza"
+    - Input de "Cidade:" deve ser preenchido com "São Paulo"
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        function autofill() {
+          document.getElementById("nome").value = "Ana Luiza";
+          document.getElementById("cidade").value = "São Paulo";
+          }
+      </script>    
+        <form name="formulario" action="teste.asp" method="post">
+            <p>
+              <label>
+                Nome: <input
+                type="text"
+                name="nome"
+                placeholder="Seu nome"
+                required>
+            </p>
+            <p>
+              <label>
+                Cidade: <input
+                  type="text"
+                  name="cidade"
+                  placeholder="Sua cidade"
+                  required>
+            </p>
+            <p>
+              <input
+                type="button" value="Preencher campos" ondbclick="autofill();">
+            </p>
+        </form>
+    </body>
+</html>
