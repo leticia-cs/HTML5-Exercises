@@ -1,4 +1,63 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
-  
+   <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form name="formulario" action="teste.asp" method="post">
+          <fieldset>
+            <legend> Dados do Candidato </legend>
+            <p>
+              <label>
+                  Nome: <input
+                  type="text"
+                  name="nome"
+                  placeholder="Seu Nome"
+                  required>
+              </label>
+            </p>
+            <p>
+              <label>
+                Email: <input
+                type="email"
+                name="mail"
+                placeholder="yourmail@mail.com"
+                required>
+              </label>
+            </p>
+            <p>
+              <label>
+                Telefone: <input
+                type="num"
+                name="telefone"
+                placeholder="(XX)XXXXX-XXXX"
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend> Interesses
+            <p>
+              <label>
+                Vagas: 
+                <select name"vagas" required>
+                  <optgroup label="Área administrativa">
+                  <option value="1.1"> Contador
+                  <option value="1.2"> Analista de RH
+                  <optgroup label="Área comercial">
+                  <option value="2.1"> Vendedor
+                  <option value="2.2"> Entregador
+                  <option value="2.2"> Gerente
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend> Operações
+              <p>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+              </p>
+          </fieldset>
+        </form>
+    </body>
 </html>
