@@ -1,0 +1,40 @@
+<!--chapter3ex5
+
+Editável + Ocultável
+- Parágrafo editável
+- Verificação ortográfica
+- link "Ocultar/Exibir"
+  - onclick, o parágrafo editável deve sumir
+  - onclick de novo, o parágrafo aparece
+
+Notas:
+- link Ocultar/Exibir não funciona.
+  - ???????
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+        <script>
+            function sumirVoltar() {
+                if (document.getElementById('paragrafo').hidden == true) {
+                    document.getElementById('paragrafo').hidden == false;
+                } else {
+                    document.getElementById('paragrafo').hidden == true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>O parágrafo abaixo é editável</h1>
+        <p id="paragrafo" contenteditable="true" spellcheck="true">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere commodo dui a placerat. Mauris eget metus vitae nisi eleifend varius ut ultricies ipsum. Integer gravida sapien non diam tincidunt, sit amet tincidunt justo consectetur. Nullam quis purus convallis, placerat arcu non, tincidunt quam. Phasellus interdum semper elementum. Ut sollicitudin tincidunt iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Pellentesque suscipit, massa ut mattis iaculis, augue nunc consectetur risus, sed vehicula tortor urna a ex. Duis quis euismod ligula. Cras pharetra urna venenatis nisl semper lobortis. Sed non ultrices lacus. Duis lacinia felis quis sapien sagittis ullamcorper.
+        </p>
+        <p>
+            <a href="#" onclick="sumirVoltar()">Ocultar/Exibir</a>
+        </p>
+    </body>
+</html>
