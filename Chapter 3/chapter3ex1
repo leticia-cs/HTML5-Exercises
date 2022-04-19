@@ -1,0 +1,49 @@
+<!--chapter3ex1
+
+Estilizar parágrafos
+- 4 parágrafos, mín. 3 linhas texto
+- Atributo class
+- Duas classes de estilização (providenciado)
+  - 1° e 3°
+  - 2° e 4°
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+
+        <style type="text/css">
+            p.impar {
+                margin:"10px";
+                font-family:"tahoma";
+                font-size:"14px";
+            }
+            p.par {
+                margin-left:"40px";
+                font-style:"italic";
+                line-height:"1.3";
+                font-family:"Courier New";
+                font-size:"12px";
+            }
+        </style>
+    </head>
+    <body>
+        <p class="impar">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere commodo dui a placerat. Mauris eget metus vitae nisi eleifend varius ut ultricies ipsum. Integer gravida sapien non diam tincidunt, sit amet tincidunt justo consectetur. Nullam quis purus convallis, placerat arcu non, tincidunt quam. Phasellus interdum semper elementum. Ut sollicitudin tincidunt iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Pellentesque suscipit, massa ut mattis iaculis, augue nunc consectetur risus, sed vehicula tortor urna a ex. Duis quis euismod ligula. Cras pharetra urna venenatis nisl semper lobortis. Sed non ultrices lacus. Duis lacinia felis quis sapien sagittis ullamcorper.
+        </p>
+        <p class="par">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel nulla id tellus suscipit cursus id non orci. Phasellus semper augue ut elit scelerisque luctus. Sed quis diam quis nisi interdum sagittis. Donec nisi elit, dignissim non porttitor a, aliquet quis mauris. Ut tincidunt eu metus sit amet sollicitudin. Maecenas vehicula, ex at semper dictum, nunc enim fermentum quam, quis scelerisque felis quam vel dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur eu justo ut erat hendrerit elementum.
+        </p>
+        <p class="impar">
+            Vivamus facilisis ultricies risus, vitae scelerisque mauris. Quisque est erat, sollicitudin non egestas nec, vulputate vel massa. Phasellus arcu dolor, dictum id porta vitae, interdum molestie ante. In finibus nunc quis libero tincidunt vestibulum. Sed ultricies dictum quam, at dignissim urna finibus sit amet. Praesent pretium volutpat nulla, a aliquam massa. Duis ut arcu vitae nulla suscipit convallis at id urna. Suspendisse iaculis, odio non scelerisque rhoncus, lacus felis ultrices risus, sed dapibus nisl nisi vel quam. Ut interdum magna nec odio molestie, quis tempor arcu viverra. Phasellus blandit sem at magna ornare auctor et ac lorem.
+        </p>
+        <p class="par">
+            Proin consectetur mi nulla, nec placerat eros finibus nec. Quisque placerat, lacus a ultrices dapibus, orci massa feugiat est, sit amet sollicitudin nulla lectus eget mi. Maecenas volutpat quis nisl ac aliquet. Aenean leo nisi, molestie mollis turpis et, pretium scelerisque nunc. Duis eu ex in neque eleifend porta. Duis fermentum sapien purus, quis pellentesque tortor mattis eu. In sit amet quam diam. Sed lobortis libero at mauris egestas tempus. Nam at massa at tortor efficitur lobortis et porta dui. Aliquam rhoncus mauris vitae maximus venenatis. Nullam volutpat feugiat magna, vitae pellentesque est gravida eget. Nam ornare nisl at purus sagittis, ac laoreet quam egestas.  
+        </p>
+
+
+
+    </body>
+</html>
