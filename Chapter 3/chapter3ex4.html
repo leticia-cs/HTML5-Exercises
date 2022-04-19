@@ -1,0 +1,61 @@
+<!--
+chapter3ex4
+
+Formulário
+- campo "Nome"
+- campo "Email"
+- campo "Celular"
+- campo txt "Mensagem"
+- botão "Enviar"
+
+- Idioma pt-br
+- Codificação UTF-8
+- campo txt:
+  - 5 linhas
+  - 50 colunas
+  - 500 caracteres máx.
+  - em Hover: "Sua mensagem não pode ultrapassar 500 caracteres"
+- Método "post"
+  - P/ "teste.jsp"
+  - onclick no botão Enviar
+- Nomear todos os campos (exceto botão)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body>
+        <form action="teste.jsp" method="post">
+            <p>
+                <label>Nome:
+                    <input type="text" name="nome">
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                    <input type="email" name="email" placeholder="meu@email.com">
+                </label>
+            </p>
+            <p>
+                <label>Celular:
+                    <input type="number" name="celular" placeholder="(XX)XXXXX-XXXX">
+                </label>
+            </p>
+            <p>
+                <label>Mensagem:</label>
+            </p>
+            <p>
+                <textarea name="mensagem"
+                rows="5"
+                cols="50"
+                maxlength="500"
+                title="Sua mensagem não pode ultrapassar 500 caracteres"
+                placeholder="Digite aqui a sua mensagem.">
+                </textarea>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
