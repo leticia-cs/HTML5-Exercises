@@ -1,0 +1,38 @@
+<!--chapter3ex3
+
+Menu
+- Menu, três opções:
+  - Sobre nós
+  - Contato
+  - Serviços
+- Links menu devem estar dentro do elemento <li>
+- Lista criada com o elemento <ul>
+    - list-style-type: "none"
+- CSS p/ lista
+  - display:"inline";
+  - margin-right: 15px;
+- Ordenação ao pressionar TAB
+  - Inverso: Serviços, Contato, Sobre nós.
+- ALT + e (p/ opção serviços)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo</title>
+    </head>
+    <body style="display:inline;margin-right:15px">
+        <ul>
+            <li>
+                <a href="sobrenos.html" tabindex="3">Sobre nós</a><br>
+            </li>
+            <li>
+                <a href="contato.html" tabindex="2">Contato</a><br>
+            </li>
+            <li>
+                <a href="servicos.html" tabindex="1" accesskey="e">Serviços</a><br>
+            </li>
+        </ul>
+    </body>
+</html>
